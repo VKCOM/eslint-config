@@ -1,0 +1,31 @@
+{
+  "name": "@vkontakte/eslint-config",
+  "version": "0.0.1",
+  "description": "eslint config from vkontakte",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "bumbledos@gmail.com",
+  "license": "ISC",
+  "dependencies": {
+    "@typescript-eslint/parser": "^2.8.0",
+    "babel-eslint": "^10.0.3",
+    "eslint-config-google": "^0.14.0"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^2.8.0",
+    "@vkontakte/eslint-plugin-no-invalid-this-except": "^1.0.0",
+    "eslint": "^6.6.0",
+    "eslint-plugin-react": "^7.16.0",
+    "eslint-plugin-react-hooks": "^2.3.0",
+    "typescript": "^3.7.2"
+  },
+  "peerDependencies": {
+    "@typescript-eslint/eslint-plugin": "^2.8.0",
+    "@vkontakte/eslint-plugin-no-invalid-this-except": "^1.0.0",
+    "eslint": "^6.6.0",
+    "eslint-plugin-react": "^7.16.0",
+    "eslint-plugin-react-hooks": "^2.3.0"
+  }
+}
