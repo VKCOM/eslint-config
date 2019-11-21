@@ -5,8 +5,7 @@ module.exports = {
   ],
   "plugins": [
     "react",
-    "react-hooks",
-    "@vkontakte/no-invalid-this-except"
+    "react-hooks"
   ],
   "rules": {
     "require-jsdoc": "off",
@@ -19,7 +18,6 @@ module.exports = {
     "no-octal": "error",
     "no-eval": "error",
     "no-invalid-this": "off",
-    "@vkontakte/no-invalid-this-except/no-invalid-this-except": ["error", ["each", "addEvent"]],
     "prefer-rest-params": "off",
     "prefer-spread": "off",
     "no-multi-spaces": ["error", { "ignoreEOLComments": true }],
