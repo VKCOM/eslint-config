@@ -1,2 +1,4 @@
 .gitignore
 yarn.lock
+.idea/
+.DS_Store
