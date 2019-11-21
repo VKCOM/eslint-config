@@ -1,6 +1,6 @@
 {
   "name": "@vkontakte/eslint-config",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "eslint config from vkontakte",
   "main": "index.js",
   "scripts": {
