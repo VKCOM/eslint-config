@@ -11,7 +11,7 @@
 
 ## Использование
 
-В вашем .eslintrc добавьте extend:
+В вашем .eslintrc добавьте extends:
 
 ```js
 // .eslintrc.js
@@ -20,7 +20,7 @@ modules.exports = {
 }
 ```
 
-Конфиг для typescript-файлов лежит отдельно. Он подключается так же через extend:
+Конфиг для typescript-файлов лежит отдельно. Он подключается так же через extends:
 
 ```js
 // .eslintrc.js
