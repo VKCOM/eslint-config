@@ -1,6 +1,6 @@
 # @vkontakte/eslint-config
 
-Правила линтинга для .js, .jsx, .ts и .tsx файлов от [VK](https://vk.com/).
+Правила линтинга ECMAScript, JSX и TypeScript модулей от [VK](https://vk.com/).
 
 ## Установка
 
