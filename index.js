@@ -1,44 +1,60 @@
 module.exports = {
-  "parser": "babel-eslint",
-  "extends": [
-    "google"
+  plugins: [
+    'stylelint-declaration-strict-value',
+    'stylelint-selector-bem-pattern',
   ],
-  "plugins": [
-    "react",
-    "react-hooks"
-  ],
-  "rules": {
-    "require-jsdoc": "off",
-    "comma-dangle": ["warn", "always-multiline"],
-    "no-undef": "error",
-    "space-infix-ops": ["error", { "int32Hint": false }],
-    "object-curly-spacing": ["error", "always"],
-    "max-len": ["error", 180, 2, { "ignoreTemplateLiterals": true }],
-    "curly": [2, "all"],
-    "no-octal": "error",
-    "no-eval": "error",
-    "no-invalid-this": "off",
-    "prefer-rest-params": "off",
-    "prefer-spread": "off",
-    "no-multi-spaces": ["error", { "ignoreEOLComments": true }],
-    "react/jsx-uses-react": 2,
-    "react/jsx-uses-vars": 2,
-    "react/react-in-jsx-scope": 2,
-    "react-hooks/rules-of-hooks": "error",
-    "no-multiple-empty-lines": ["error", { "max": 1 }],
-    "no-global-assign": "error",
+  rules: {
+    'indentation': 2,
+    'number-leading-zero': 'never',
+    'string-quotes': 'single',
+    'selector-max-id': 0,
+    'selector-list-comma-newline-after': 'always',
+    'rule-empty-line-before': [
+      'always',
+      { ignore: ['after-comment', 'first-nested'] },
+    ],
+    'comment-empty-line-before': [
+      'always',
+      { except: ['first-nested'] },
+    ],
+    'block-opening-brace-space-before': 'always',
+    'declaration-colon-space-after': 'always',
+    'declaration-colon-space-before': 'never',
+    'declaration-block-single-line-max-declarations': 1,
+    'declaration-property-value-blacklist': {
+      '/^border/': ['none'],
+      '/^(@|--).+/': ['/^#/', '/^rgb/'],
+    },
+    'at-rule-empty-line-before': [
+      'always',
+      { ignore: ['after-comment'], except: ['first-nested'] },
+    ],
 
-    "react/prop-types": 0,
-    "brace-style": ["error", "1tbs", { "allowSingleLine": true }],
-    "camelcase": ["error", { "properties": "never", "ignoreDestructuring": true }],
-    "func-call-spacing": ["error", "never"],
-    "no-array-constructor": "error",
-    "no-unused-vars": ["error", { "ignoreRestSiblings": true, "args": "none" }],
-    "semi": ["error", "always"]
+    'scale-unlimited/declaration-strict-value': [
+      'background-image',
+      'background',
+      '/color/',
+      'fill',
+      'stroke',
+    ],
+    'max-empty-lines': 1,
+    'declaration-no-important': true,
+    'no-duplicate-selectors': true,
+    'color-named': 'never',
+    'function-url-scheme-blacklist': ['/^data:/'],
+    'length-zero-no-unit': true,
+    'property-blacklist': [/^\./],
+    'declaration-block-semicolon-newline-after': 'always',
+    'no-extra-semicolons': true,
+    'declaration-block-trailing-semicolon': 'always',
+    'block-opening-brace-newline-after': 'always',
+    'block-closing-brace-newline-before': 'always',
+    'function-linear-gradient-no-nonstandard-direction': true,
+    'plugin/selector-bem-pattern': {
+      'componentName': '^[A-Z][a-zA-Z0-9]+$',
+      'componentSelectors': '^\\.{componentName}(?:__[a-z][a-zA-Z0-9]*)?(?:--[a-z][a-zA-Z0-9]*)?$',
+      'implicitComponents': true,
+      'ignoreCustomProperties': /.*/,
+    },
   },
-  "settings": {
-    "react": {
-      "version": "detect"  // Tells eslint-plugin-react to automatically detect the version of React to use
-    }
-  }
 }
