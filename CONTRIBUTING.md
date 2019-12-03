@@ -1,6 +1,7 @@
-1. Вносим и коммитим изменения
-2. Поднимаем версию пакета командой `yarn version`
-3. Запускаем `yarn publish --non-interactive --access public`
-4. Пушим изменения: `git push origin master`
-5. ...
-6. PROFIT
+Все изменения делаем в отдельной ветке
+
+1. Вносим и коммитим изменения.
+2. Поднимаем версию пакета командой `yarn version`. Команда поднимет версию в package.json, создаст коммит и git-тег.
+3. Создаем MR в master.
+4. После принятия MR из master запускаем `yarn publish --non-interactive --access public`.
+5. Обязательно в releases пишем, что поменялось.
