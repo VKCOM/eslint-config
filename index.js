@@ -21,20 +21,23 @@ module.exports = {
     "prefer-rest-params": "off",
     "prefer-spread": "off",
     "no-multi-spaces": ["error", { "ignoreEOLComments": true }],
-    "react/jsx-uses-react": 2,
-    "react/jsx-uses-vars": 2,
-    "react/react-in-jsx-scope": 2,
     "react-hooks/rules-of-hooks": "error",
     "no-multiple-empty-lines": ["error", { "max": 1 }],
     "no-global-assign": "error",
 
-    "react/prop-types": 0,
     "brace-style": ["error", "1tbs", { "allowSingleLine": true }],
     "camelcase": ["error", { "properties": "never", "ignoreDestructuring": true }],
     "func-call-spacing": ["error", "never"],
     "no-array-constructor": "error",
     "no-unused-vars": ["error", { "ignoreRestSiblings": true, "args": "none" }],
-    "semi": ["error", "always"]
+    "semi": ["error", "always"],
+
+    "react/jsx-uses-react": 2,
+    "react/jsx-uses-vars": 2,
+    "react/react-in-jsx-scope": 2,
+    "react/prop-types": 2,
+    "react/jsx-indent": ["error", 2],
+    "react/jsx-indent-props": ["error", 2]
   },
   "settings": {
     "react": {
