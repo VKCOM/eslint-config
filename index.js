@@ -1,7 +1,11 @@
 module.exports = {
   "parser": "babel-eslint",
   "extends": [
-    "google",
+    "google"
+  ],
+  "plugins": [
+    "react",
+    "react-hooks"
   ],
   "rules": {
     "require-jsdoc": "off",
@@ -17,6 +21,7 @@ module.exports = {
     "prefer-rest-params": "off",
     "prefer-spread": "off",
     "no-multi-spaces": ["error", { "ignoreEOLComments": true }],
+    "react-hooks/rules-of-hooks": "error",
     "no-multiple-empty-lines": ["error", { "max": 1 }],
     "no-global-assign": "error",
 
@@ -26,5 +31,17 @@ module.exports = {
     "no-array-constructor": "error",
     "no-unused-vars": ["error", { "ignoreRestSiblings": true, "args": "none" }],
     "semi": ["error", "always"],
+
+    "react/jsx-uses-react": 2,
+    "react/jsx-uses-vars": 2,
+    "react/react-in-jsx-scope": 2,
+    "react/prop-types": 2,
+    "react/jsx-indent": ["error", 2],
+    "react/jsx-indent-props": ["error", 2]
+  },
+  "settings": {
+    "react": {
+      "version": "detect"  // Tells eslint-plugin-react to automatically detect the version of React to use
+    }
   }
 }

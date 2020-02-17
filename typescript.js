@@ -1,12 +1,13 @@
 module.exports = {
   "parser": "@typescript-eslint/parser", // Specifies the ESLint parser
   "extends": [
-    "../index.js",
+    "plugin:react/recommended",  // Uses the recommended rules from @eslint-plugin-react
   ],
   "plugins": [
     "@typescript-eslint"
   ],
   "rules": {
+    "react/prop-types": "off",
     "@typescript-eslint/adjacent-overload-signatures": "error",
     "@typescript-eslint/array-type": ["error", { "default": "array-simple" }],
     "@typescript-eslint/await-thenable": "error",
