@@ -14,7 +14,8 @@ module.exports = {
     "react/react-in-jsx-scope": 2,
     "react/prop-types": 2,
     "react/jsx-indent": ["error", 2],
-    "react/jsx-indent-props": ["error", 2]
+    "react/jsx-indent-props": ["error", 2],
+    "react/jsx-curly-brace-presence": "error"
   },
   "settings": {
     "react": {
