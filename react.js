@@ -16,6 +16,14 @@ module.exports = {
     'react/jsx-indent': ['error', 2],
     'react/jsx-indent-props': ['error', 2],
     'react/jsx-curly-brace-presence': 'error',
+
+    // Validate whitespace in and around the JSX opening and closing brackets
+    'react/jsx-tag-spacing': ['error', {
+      closingSlash: 'never',
+      beforeSelfClosing: 'always',
+      afterOpening: 'never',
+      beforeClosing: 'never',
+    }],
   },
   settings: {
     react: {
