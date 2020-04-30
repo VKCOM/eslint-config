@@ -24,6 +24,9 @@ module.exports = {
       afterOpening: 'never',
       beforeClosing: 'never',
     }],
+
+    // Enforce the consistent use of either double or single quotes in JSX attributes
+    'jsx-quotes': ['error', 'prefer-double'],
   },
   settings: {
     react: {

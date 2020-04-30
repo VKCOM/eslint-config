@@ -26,5 +26,8 @@ module.exports = {
     'no-array-constructor': 'error',
     'no-unused-vars': ['error', { ignoreRestSiblings: true, args: 'none' }],
     'semi': ['error', 'always'],
+
+    // Disallow duplicate imports
+    'no-duplicate-imports': 'error',
   },
 };
