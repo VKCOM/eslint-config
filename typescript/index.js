@@ -42,7 +42,9 @@ module.exports = {
     '@typescript-eslint/no-empty-function': 'error',
     '@typescript-eslint/no-empty-interface': 'error',
     'no-extra-parens': 'off',
-    '@typescript-eslint/no-extra-parens': 'error',
+    '@typescript-eslint/no-extra-parens': ['error', 'all', {
+      ignoreJSX: 'all',
+    }],
     '@typescript-eslint/no-extraneous-class': 'error',
     '@typescript-eslint/no-floating-promises': 'error',
     '@typescript-eslint/no-for-in-array': 'error',
@@ -58,7 +60,9 @@ module.exports = {
     '@typescript-eslint/no-unnecessary-type-arguments': 'error',
     '@typescript-eslint/no-unnecessary-type-assertion': 'error',
     'no-unused-vars': 'off',
-    '@typescript-eslint/no-unused-vars': 'error',
+    '@typescript-eslint/no-unused-vars': ['error', {
+      ignoreRestSiblings: true,
+    }],
     'no-use-before-define': 'off',
     '@typescript-eslint/no-use-before-define': ['error', { functions: false }],
     'no-useless-constructor': 'off',
