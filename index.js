@@ -29,5 +29,9 @@ module.exports = {
 
     // Disallow duplicate imports
     'no-duplicate-imports': 'error',
+
+    // Require the use of === and !==
+    // https://eslint.org/docs/rules/eqeqeq
+    'eqeqeq': ['error', 'always', { null: 'ignore' }],
   },
 };
