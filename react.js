@@ -27,6 +27,10 @@ module.exports = {
 
     // Enforce the consistent use of either double or single quotes in JSX attributes
     'jsx-quotes': ['error', 'prefer-double'],
+
+    // Disallow spaces inside of curly braces in JSX attributes
+    // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-curly-spacing.md
+    'react/jsx-curly-spacing': ['error', { when: 'never', children: true, allowMultiline: true }],
   },
   settings: {
     react: {
