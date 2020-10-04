@@ -33,5 +33,6 @@ module.exports = {
     // Require the use of === and !==
     // https://eslint.org/docs/rules/eqeqeq
     'eqeqeq': ['error', 'always', { null: 'ignore' }],
+    "radix": "error"
   },
 };
