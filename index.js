@@ -34,6 +34,7 @@ module.exports = {
     // https://eslint.org/docs/rules/eqeqeq
     'eqeqeq': ['error', 'always', { null: 'ignore' }],
     "radix": "error",
-    "object-shorthand": "error"
+    "object-shorthand": "error",
+    "prefer-const": "error"
   },
 };
