@@ -84,5 +84,10 @@ module.exports = {
     '@typescript-eslint/prefer-reduce-type-parameter': 'error',
 
     'valid-jsdoc': 'off',
+
+    // Disallow unnecessary semicolons
+    // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-extra-semi.md
+    'no-extra-semi': 'off',
+    '@typescript-eslint/no-extra-semi': 'error',
   },
 };
