@@ -25,7 +25,22 @@ module.exports = {
     'func-call-spacing': ['error', 'never'],
     'no-array-constructor': 'error',
     'no-unused-vars': ['error', { ignoreRestSiblings: true, args: 'none' }],
+
+    // Require use of semicolons
+    // https://eslint.org/docs/rules/semi
     'semi': ['error', 'always'],
+
+    // Enforce spacing before and after semicolons
+    // https://eslint.org/docs/rules/semi-spacing
+    'semi-spacing': ['error', { before: false, after: true }],
+
+    // Enforce location of semicolons
+    // https://eslint.org/docs/rules/semi-style
+    'semi-style': ['error', 'last'],
+
+    // Disallow unnecessary semicolons
+    // https://eslint.org/docs/rules/no-extra-semi
+    'no-extra-semi': 'error',
 
     // Disallow duplicate imports
     'no-duplicate-imports': 'error',
@@ -33,5 +48,9 @@ module.exports = {
     // Require the use of === and !==
     // https://eslint.org/docs/rules/eqeqeq
     'eqeqeq': ['error', 'always', { null: 'ignore' }],
+
+    // Enforce spaces inside of blocks after opening block and before closing block
+    // https://eslint.org/docs/rules/block-spacing
+    'block-spacing': ['error', 'always'],
   },
 };
