@@ -26,6 +26,10 @@ module.exports = {
     'no-array-constructor': 'error',
     'no-unused-vars': ['error', { ignoreRestSiblings: true, args: 'none' }],
 
+    // Disallow variable declarations from shadowing variables declared in the outer scope
+    // https://eslint.org/docs/rules/no-shadow
+    'no-shadow': 'error',
+
     // Require use of semicolons
     // https://eslint.org/docs/rules/semi
     'semi': ['error', 'always'],
