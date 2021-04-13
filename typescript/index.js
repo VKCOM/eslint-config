@@ -89,5 +89,8 @@ module.exports = {
     // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-extra-semi.md
     'no-extra-semi': 'off',
     '@typescript-eslint/no-extra-semi': 'error',
+
+    // TypeScript controls this better
+    'no-undef': 'off',
   },
 };
