@@ -14,7 +14,7 @@ const namingConventionOptions = ['error',
   // For the function variables enable PascalCase
   {
     selector: 'variable',
-    types: ['function', 'function'],
+    types: ['function'],
     format: ['camelCase', 'UPPER_CASE', 'PascalCase'],
     leadingUnderscore: 'allow',
     trailingUnderscore: 'forbid',
@@ -84,6 +84,13 @@ const namingConventionOptions = ['error',
   {
     selector: 'typeLike',
     format: ['PascalCase'],
+  },
+
+  {
+    selector: 'enum',
+    format: ['UPPER_CASE', 'PascalCase'],
+    leadingUnderscore: 'forbid',
+    trailingUnderscore: 'forbid',
   },
 
   // Ignore properties that require quotes
