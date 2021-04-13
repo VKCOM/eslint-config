@@ -1,3 +1,5 @@
+const { namingConventionOptions } = require('./naming-convention');
+
 module.exports = {
   parser: '@typescript-eslint/parser', // Specifies the ESLint parser
   extends: [
@@ -26,9 +28,6 @@ module.exports = {
     }],
     'brace-style': 'off',
     '@typescript-eslint/brace-style': ['error', '1tbs', { allowSingleLine: true }],
-    'camelcase': 'off',
-    '@typescript-eslint/camelcase': ['error', { properties: 'never', ignoreDestructuring: true }],
-    '@typescript-eslint/class-name-casing': ['error', { allowUnderscorePrefix: true }],
     '@typescript-eslint/consistent-type-assertions': ['error', { assertionStyle: 'as', objectLiteralTypeAssertions: 'never' }],
     '@typescript-eslint/explicit-member-accessibility': 'error',
     'func-call-spacing': 'off',
@@ -92,5 +91,9 @@ module.exports = {
 
     // TypeScript controls this better
     'no-undef': 'off',
+
+    'camelcase': 'off',
+    // TODO: Add rule for '@typescript-eslint/class-name-casing': ['error', { allowUnderscorePrefix: true }] (https://github.com/typescript-eslint/typescript-eslint/issues/1485)
+    '@typescript-eslint/naming-convention': namingConventionOptions,
   },
 };
