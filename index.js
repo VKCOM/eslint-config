@@ -56,6 +56,13 @@ module.exports = {
     // https://eslint.org/docs/rules/block-spacing
     'block-spacing': ['error', 'always'],
 
+    'no-restricted-syntax': ['error',
+      {
+        selector: 'ExportDefaultDeclaration',
+        message: 'Do not use export default: prefer named exports',
+      },
+    ],
+
     // Require a comment with a webpackChunkName for dynamic imports
     'import/dynamic-import-chunkname': ['error'],
   },
