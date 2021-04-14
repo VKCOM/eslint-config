@@ -3,6 +3,9 @@ module.exports = {
   extends: [
     'google',
   ],
+  plugins: [
+    'import',
+  ],
   rules: {
     'require-jsdoc': 'off',
     'comma-dangle': ['warn', 'always-multiline'],
@@ -52,5 +55,15 @@ module.exports = {
     // Enforce spaces inside of blocks after opening block and before closing block
     // https://eslint.org/docs/rules/block-spacing
     'block-spacing': ['error', 'always'],
+
+    'no-restricted-syntax': ['error',
+      {
+        selector: 'ExportDefaultDeclaration',
+        message: 'Do not use export default: prefer named exports',
+      },
+    ],
+
+    // Require a comment with a webpackChunkName for dynamic imports
+    'import/dynamic-import-chunkname': ['error'],
   },
 };
