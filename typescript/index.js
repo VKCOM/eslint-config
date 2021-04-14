@@ -93,7 +93,6 @@ module.exports = {
     'no-undef': 'off',
 
     'camelcase': 'off',
-    // TODO: Add rule for '@typescript-eslint/class-name-casing': ['error', { allowUnderscorePrefix: true }] (https://github.com/typescript-eslint/typescript-eslint/issues/1485)
     '@typescript-eslint/naming-convention': namingConventionOptions,
   },
 };
