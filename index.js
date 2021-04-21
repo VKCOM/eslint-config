@@ -52,5 +52,17 @@ module.exports = {
     // Enforce spaces inside of blocks after opening block and before closing block
     // https://eslint.org/docs/rules/block-spacing
     'block-spacing': ['error', 'always'],
+
+    // Disallow variable declarations from shadowing variables declared in the outer scope
+    // https://eslint.org/docs/rules/no-shadow
+    'no-shadow': 'error',
+
+    // Disallow unreachable code after return, throw, continue, and break statements
+    // https://eslint.org/docs/rules/no-unreachable
+    'no-unreachable': 'error',
+
+    // Disallow negating the left operand of relational operators
+    // https://eslint.org/docs/rules/no-unsafe-negation
+    'no-unsafe-negation': 'error',
   },
 };
