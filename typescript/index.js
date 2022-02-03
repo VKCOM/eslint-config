@@ -81,6 +81,7 @@ module.exports = {
     '@typescript-eslint/unbound-method': 'error',
     '@typescript-eslint/unified-signatures': 'error',
     '@typescript-eslint/prefer-reduce-type-parameter': 'error',
+    '@typescript-eslint/prefer-ts-expect-error': 'error',
 
     'valid-jsdoc': 'off',
 
