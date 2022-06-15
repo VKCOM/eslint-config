@@ -9,7 +9,7 @@
   "author": "bumbledos@gmail.com",
   "license": "MIT",
   "engines": {
-    "yarn": ">=1.21.1 <=1.22.18"
+    "yarn": "^1.21.1"
   },
   "dependencies": {
     "@babel/core": "^7.13.15",
