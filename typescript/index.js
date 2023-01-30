@@ -95,5 +95,10 @@ module.exports = {
 
     'camelcase': 'off',
     '@typescript-eslint/naming-convention': namingConventionOptions,
+    '@typescript-eslint/ban-ts-comment': ['error', {
+      'ts-ignore': true,
+      'ts-nocheck': false,
+      'ts-expect-error': { descriptionFormat: '^ TS\\d+: .+$' }
+    }],
   },
 };
