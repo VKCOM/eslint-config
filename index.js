@@ -10,6 +10,8 @@ module.exports = {
     'space-infix-ops': ['error', { int32Hint: false }],
     'object-curly-spacing': ['error', 'always'],
     'max-len': ['error', 180, 2, { ignoreTemplateLiterals: true }],
+    'max-params': 'error',
+    'no-nested-ternary': 'error',
     'curly': [2, 'all'],
     'no-octal': 'error',
     'no-eval': 'error',
