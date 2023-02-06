@@ -16,7 +16,7 @@
 ```js
 // .eslintrc.js
 
-modules.exports = {
+module.exports = {
   "extends": ["@vkontakte"]
 }
 ```
@@ -26,7 +26,7 @@ modules.exports = {
 ```js
 // .eslintrc.js
 
-modules.exports = {
+module.exports = {
   "extends": ["@vkontakte/eslint-config/typescript"]
 }
 ```
