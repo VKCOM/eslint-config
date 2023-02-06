@@ -64,5 +64,8 @@ module.exports = {
     // Disallow negating the left operand of relational operators
     // https://eslint.org/docs/rules/no-unsafe-negation
     'no-unsafe-negation': 'error',
+
+    // https://eslint.org/docs/rules/no-empty
+    'no-empty': ['error', { allowEmptyCatch: true }],
   },
 };
