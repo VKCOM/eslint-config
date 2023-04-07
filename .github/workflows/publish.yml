@@ -38,6 +38,6 @@ jobs:
           branch: ${{ github.ref }}
 
       - name: Publushing release
-        run: yarn publish --accecc public --non-interactive
+        run: yarn publish --access public --non-interactive
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPMJS_PUBLISH_TOKEN }}
