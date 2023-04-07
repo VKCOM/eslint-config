@@ -1,12 +1,7 @@
 module.exports = {
   parser: '@babel/eslint-parser',
-  extends: [
-    './index.js',
-  ],
-  plugins: [
-    'react',
-    'react-hooks',
-  ],
+  extends: ['plugin:@vkontakte/eslint-plugin/default'],
+  plugins: ['react', 'react-hooks'],
   rules: {
     'react-hooks/rules-of-hooks': 'error',
     'react/jsx-uses-react': 2,
@@ -18,19 +13,32 @@ module.exports = {
     'react/jsx-curly-brace-presence': 'error',
 
     // Validate whitespace in and around the JSX opening and closing brackets
-    'react/jsx-tag-spacing': ['error', {
-      closingSlash: 'never',
-      beforeSelfClosing: 'always',
-      afterOpening: 'never',
-      beforeClosing: 'never',
-    }],
+    'react/jsx-tag-spacing': [
+      'error',
+      {
+        closingSlash: 'never',
+        beforeSelfClosing: 'always',
+        afterOpening: 'never',
+        beforeClosing: 'never',
+      },
+    ],
 
     // Enforce the consistent use of either double or single quotes in JSX attributes
     'jsx-quotes': ['error', 'prefer-double'],
 
     // Disallow spaces inside of curly braces in JSX attributes
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-curly-spacing.md
-    'react/jsx-curly-spacing': ['error', { when: 'never', children: true, allowMultiline: true }],
+    'react/jsx-curly-spacing': [
+      'error',
+      { when: 'never', children: true, allowMultiline: true },
+    ],
+
+    '@vkontakte/no-object-expression-in-arguments': [
+      'error',
+      {
+        onlyForFunctionsWithNames: ['classNames'],
+      },
+    ],
   },
   settings: {
     react: {

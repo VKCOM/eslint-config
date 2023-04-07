@@ -2,33 +2,39 @@ const { namingConventionOptions } = require('./naming-convention');
 
 module.exports = {
   parser: '@typescript-eslint/parser', // Specifies the ESLint parser
-  extends: [
-    '../index.js',
-  ],
-  plugins: [
-    '@typescript-eslint',
-  ],
+  extends: ['plugin:@vkontakte/eslint-plugin/default'],
+  plugins: ['@typescript-eslint'],
   rules: {
     '@typescript-eslint/adjacent-overload-signatures': 'error',
     '@typescript-eslint/array-type': ['error', { default: 'array-simple' }],
     '@typescript-eslint/await-thenable': 'error',
-    '@typescript-eslint/ban-types': ['error', {
-      types: {
-        Function: 'Use exact typing of callables instead of generic Function',
-        Object: 'Use {} instead or exact typing',
-        String: {
-          message: 'Use string instead',
-          fixWith: 'string',
-        },
-        Number: {
-          message: 'Use number instead',
-          fixWith: 'number',
+    '@typescript-eslint/ban-types': [
+      'error',
+      {
+        types: {
+          Function: 'Use exact typing of callables instead of generic Function',
+          Object: 'Use {} instead or exact typing',
+          String: {
+            message: 'Use string instead',
+            fixWith: 'string',
+          },
+          Number: {
+            message: 'Use number instead',
+            fixWith: 'number',
+          },
         },
       },
-    }],
+    ],
     'brace-style': 'off',
-    '@typescript-eslint/brace-style': ['error', '1tbs', { allowSingleLine: true }],
-    '@typescript-eslint/consistent-type-assertions': ['error', { assertionStyle: 'as', objectLiteralTypeAssertions: 'never' }],
+    '@typescript-eslint/brace-style': [
+      'error',
+      '1tbs',
+      { allowSingleLine: true },
+    ],
+    '@typescript-eslint/consistent-type-assertions': [
+      'error',
+      { assertionStyle: 'as', objectLiteralTypeAssertions: 'never' },
+    ],
     '@typescript-eslint/explicit-member-accessibility': 'error',
     'func-call-spacing': 'off',
     '@typescript-eslint/func-call-spacing': ['error', 'never'],
@@ -41,15 +47,22 @@ module.exports = {
     '@typescript-eslint/no-empty-function': 'error',
     '@typescript-eslint/no-empty-interface': 'error',
     'no-extra-parens': 'off',
-    '@typescript-eslint/no-extra-parens': ['error', 'all', {
-      ignoreJSX: 'all',
-    }],
+    '@typescript-eslint/no-extra-parens': [
+      'error',
+      'all',
+      {
+        ignoreJSX: 'all',
+      },
+    ],
     '@typescript-eslint/no-extraneous-class': 'error',
     '@typescript-eslint/no-floating-promises': 'error',
     '@typescript-eslint/no-for-in-array': 'error',
     '@typescript-eslint/no-inferrable-types': 'error',
     'no-magic-numbers': 'off',
-    '@typescript-eslint/no-magic-numbers': ['error', { ignoreNumericLiteralTypes: true, ignoreEnums: true }],
+    '@typescript-eslint/no-magic-numbers': [
+      'error',
+      { ignoreNumericLiteralTypes: true, ignoreEnums: true },
+    ],
     '@typescript-eslint/no-misused-new': 'error',
     '@typescript-eslint/no-misused-promises': 'error',
     '@typescript-eslint/no-non-null-assertion': 'error',
@@ -59,9 +72,12 @@ module.exports = {
     '@typescript-eslint/no-unnecessary-type-arguments': 'error',
     '@typescript-eslint/no-unnecessary-type-assertion': 'error',
     'no-unused-vars': 'off',
-    '@typescript-eslint/no-unused-vars': ['error', {
-      ignoreRestSiblings: true,
-    }],
+    '@typescript-eslint/no-unused-vars': [
+      'error',
+      {
+        ignoreRestSiblings: true,
+      },
+    ],
     'no-use-before-define': 'off',
     '@typescript-eslint/no-use-before-define': ['error', { functions: false }],
     'no-useless-constructor': 'off',
@@ -95,10 +111,13 @@ module.exports = {
 
     'camelcase': 'off',
     '@typescript-eslint/naming-convention': namingConventionOptions,
-    '@typescript-eslint/ban-ts-comment': ['error', {
-      'ts-ignore': true,
-      'ts-nocheck': false,
-      'ts-expect-error': { descriptionFormat: '^ TS\\d+: .+$' }
-    }],
+    '@typescript-eslint/ban-ts-comment': [
+      'error',
+      {
+        'ts-ignore': true,
+        'ts-nocheck': false,
+        'ts-expect-error': { descriptionFormat: '^ TS\\d+: .+$' },
+      },
+    ],
   },
 };
