@@ -1,6 +1,7 @@
 # Перенесён
 
-Пакет теперь доступен под названием [@vkontakte/eslint-plugin](https://github.com/VKCOM/eslint-plugin). Пожалуйста, мигрируйте на него. Это репозиторий больше не поддерживается.
+> **Warning**
+> Пакет теперь доступен под названием [@vkontakte/eslint-plugin](https://github.com/VKCOM/eslint-plugin). Пожалуйста, мигрируйте на него. Это репозиторий больше не поддерживается.
 
 # @vkontakte/eslint-plugin
 
