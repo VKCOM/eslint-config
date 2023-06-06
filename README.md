@@ -1,3 +1,8 @@
+# Перенесён
+
+> **Warning**
+> Пакет теперь доступен под названием [@vkontakte/eslint-plugin](https://github.com/VKCOM/eslint-plugin). Пожалуйста, мигрируйте на него. Это репозиторий больше не поддерживается.
+
 # @vkontakte/eslint-plugin
 
 Правила линтинга ECMAScript, JSX и TypeScript модулей от [VK](https://vk.com/).
